@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i,k=1;int h;
+     long double a,b,c;
+    cout<<"enter 1 if you want to use calculator"<<endl;
+    cin>>h;
+    cout<<"enter 1st value here : "<<endl;
+        cin>>a;
+    while(h==1){
+ 
+    
+    cout<<"enter 1 if you want to divide'/'"<<endl;
+    cout<<"enter 2 if you want to multiply'*'"<<endl;
+    cout<<"enter 3 if you want to add'+'"<<endl;
+    cout<<"enter 4 if you want to subs'-'"<<endl;
+    cin>>i;
+
+   
+    cout<<"enter 2nd value here : ";
+    cin>>b;
+   
+    switch (i)
+    {
+        case 1:
+            cout<<"here is the result of "<<a<<"/"<<b<<" : "<<a/b<<endl;
+            c=a/b;
+            break;
+            case 2:
+            c=a*b;
+             cout<<"here is the result of "<<a<<"*"<<b<<" : "<<a*b<<endl;
+             break;
+             case 3:
+             c=a+b;
+              cout<<"here is the result of "<<a<<"*"<<b<<" : "<<a+b<<endl;
+              break;
+              case 4:
+              c=a-b;
+              cout<<"here is the result of "<<a<<"-"<<b<<" : "<<a-b<<endl;
+              break;
+              default:
+              cout<<"invailid input"<<endl;
+              break;
+             
+              
+    }
+     a=c;
+  cout<<"do you want to continue with the result?(yes=1/no=0) : ";
+     cin>>h;  
+} 
+return 0;
+}
