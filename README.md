@@ -1,2 +1,7 @@
-# first-code
-my first time coding tried c++ for first time
+#include<istream>
+using namespace std;
+int main(){
+cout<<"hello world";
+return 0;
+}
+
